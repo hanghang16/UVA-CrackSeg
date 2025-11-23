@@ -32,8 +32,8 @@
 ### 2.1 基础环境安装
 ```bash
 # 1. 克隆本仓库
-git clone https://github.com/hanghang16/UVA-CrackSeg.git
-cd UVA-CrackSeg
+git clone https://github.com/hanghang16/UAV-CrackSeg.git
+cd UAV-CrackSeg
 
 # 2. 创建虚拟环境
 conda create -n vlp_seg python=3.9 -y
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 请确保数据集按照以下结构放置在 `data/` 目录下：
 
 ```text
-UVA-CrackSeg/
+UAV-CrackSeg/
 ├── configs/
 ├── tools/
 ├── ...
@@ -105,7 +105,7 @@ python tools/test.py \
 
 ## 5\. 开源许可证 (License)
 
-本项目遵循 **Apache 2.0 License** 开源协议，与 MMSegmentation 保持一致。详细条款请参见 [LICENSE](https://github.com/hanghang16/UVA-CrackSeg/blob/main/LICENSE) 文件。
+本项目遵循 **Apache 2.0 License** 开源协议，与 MMSegmentation 保持一致。详细条款请参见 [LICENSE](https://github.com/hanghang16/UAV-CrackSeg/blob/main/LICENSE) 文件。
 
 -----
 
