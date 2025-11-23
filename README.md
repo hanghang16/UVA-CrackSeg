@@ -1,4 +1,3 @@
-````markdown
 # 2025 VLP挑战赛参赛作品 - 路面裂缝语义分割
 
 <div align="center">
