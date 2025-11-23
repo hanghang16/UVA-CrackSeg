@@ -21,7 +21,7 @@
     * CrossEntropyLoss（权重 1.0）作为主损失；
     * LovaszLoss（权重 1.0）作为辅助损失，帮助模型更好地理解裂缝的“细长空间关系”，从而生成更完整、更连续的预测掩膜。
 * **模型融合**：采用了多模型加权融合策略 (Model Fusion)，显著提升了最终的 IoU 分数。
-* **当前成绩**：在榜单中暂列 **第 5 名**。
+
 
 ---
 
@@ -71,10 +71,12 @@ UAV-CrackSeg/
     └── vlp_dataset/          # [请修改为你实际的数据集文件夹名]
         ├── images/
         │   ├── train/
-        │   └── val/
+        │   ├── val/
+        │   └── test/        
         └── annotations/
             ├── train/
             └── val/
+
 ```
 
 -----
@@ -97,8 +99,7 @@ python tools/train.py Crack-Configs/你的配置文件名.py
 ```bash
 python tools/test.py \
     Crack-Configs/你的配置文件名.py \
-    work_dirs/你的权重文件.pth \
-    --eval mIoU
+    checkpoint/你的权重文件.pth \
 ```
 
 -----
